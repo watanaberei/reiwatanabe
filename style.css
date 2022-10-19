@@ -221,12 +221,16 @@ table {
 
     /* ==== Color ==== */
     --BG: #F0F1F1;
-    --light: #DEDEDC;
+    --light: #F3F3FA;
     --regular: #B7B6B5;
-    --green: #28322A;
+    --green: #1B2421;
     --grey: #B7B6B5;
     --dark: #0D0E0E;
-    --red: #c62b29;
+    /* --red: #E2A38F; */
+    --red: #AE483F;
+    /* --red: #E3C26B; */
+    /* --red: #E06652; */
+    /* --red: #b04c03; */
     --yellow: #FFFF4D;
 }
 
@@ -241,22 +245,22 @@ html {
 
 h1::selection {
   background-color: var(--white);
-color: var(--yellow);
+color: var(--red);
 }
 
 span::selection {
   background-color: var(--white);
-  color: var(--yellow);
+  color: var(--red);
 }
 
 button::selection {
   background-color: var(--white);
-color: var(--yellow);
+color: var(--red);
 }
 
 a::selection {
   background-color: var(--white);
-  color: var(--yellow);
+  color: var(--red);
 }
 
 
@@ -355,7 +359,7 @@ a, button{
     /* margin-bottom: calc(3 * var(--base-line-height) - var(--baseline-offset)); */
     display: inline-block;
     text-decoration: none;
-    color: var(--yellow);
+    color: var(--red);
     position: relative;
     z-index: 1;
   /* border:1px solid purple; */
