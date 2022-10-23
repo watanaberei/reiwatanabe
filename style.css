@@ -487,8 +487,27 @@ body::after {
 
 .menu {
   position: absolute;
+  left: 30px;
+  bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  gap:30px;
+}
+
+.menu-right {
+  position: absolute;
   right: 30px;
   bottom: 30px;
+}
+.menu-left {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+}
+
+
+.menu-item {
+  color: red;
 }
 
 .row:nth-of-type(3) {
