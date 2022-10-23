@@ -491,7 +491,7 @@ body::after {
   bottom: 30px;
   display: flex;
   flex-direction: row;
-  gap:30px;
+  gap:15px;
 }
 
 .menu-right {
