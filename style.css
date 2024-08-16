@@ -398,7 +398,7 @@ a span {
     position: relative;
     top: 9px;
     transform: translateX(14px);
-    opacity: 0;
+    opacity: 1;
     transition: all .3s ease-out .3s;
     width: 0.8rem
 }
