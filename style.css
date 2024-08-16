@@ -382,7 +382,7 @@ a::before {
     bottom: -3px;
     left: 0;
     width: 100%;
-    opacity: 1;
+    opacity: 1 !important;
     height: 1px;
     background-color: var(--green);
     transform: scaleX(0.0);
@@ -400,14 +400,14 @@ a span {
     position: relative;
     top: 9px;
     transform: translateX(14px);
-    opacity: 1;
+    opacity: 1 !important;
     transition: all .3s ease-out .3s;
     width: 0.8rem
 }
 
 a:hover span {
     transform: translateX(3px);
-    opacity: 1;
+    opacity: 1 !important;
 }
 
 cite {
