@@ -473,7 +473,7 @@ body::after {
 
 .row:not(:nth-of-type(1)) {
     padding: var(--spacing-3) calc(var(--spacing-3) * 1);
-    padding-top: var(--spacing-3) calc(var(--spacing-3)* 1);
+    padding-top: var(--spacing-3) calc(var(--spacing-3)* 1) !important;
 }
 /*
 @media screen and (max-width: 1366px) {
