@@ -397,7 +397,7 @@ a:hover::before {
 a span {
     display: inline-block;
     vertical-align: bottom;
-    position: relative;
+    /* position: relative; */
     top: 9px;
     transform: translateX(14px);
     opacity: 1 !important;
