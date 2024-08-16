@@ -473,6 +473,7 @@ body::after {
 
 .row:not(:nth-of-type(1)) {
     padding: var(--spacing-3) calc(var(--spacing-3) * 1);
+    padding-top: var(--spacing-3) calc(var(--spacing-3)* 1);
 }
 /*
 @media screen and (max-width: 1366px) {
@@ -490,7 +491,7 @@ body::after {
 .menu {
   position: absolute;
   left: 30px;
-  bottom: 30px;
+  bottom: 0px;
   display: flex;
   flex-direction: row;
   gap:15px;
