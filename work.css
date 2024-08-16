@@ -13,3 +13,6 @@ body {
 .figma iframe {
   align-item: center;
 }
+.embed_documentation_footer--documentationFooter--cRlI0 {
+  display: none !important;
+}
