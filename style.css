@@ -63,6 +63,7 @@ a {
   color: inherit; /* 1 */
   display: inline-block; /* 2 */
   background-color: transparent; /* 3 */
+  opacity: 1 !important;
 }
 
 /**
