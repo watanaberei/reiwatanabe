@@ -402,7 +402,7 @@ a span {
     transform: translateX(14px);
     opacity: 1 !important;
     transition: all .3s ease-out .3s;
-    width: 0.8rem
+    width: 100%;
 }
 
 a:hover span {
