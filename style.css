@@ -380,13 +380,13 @@ a::before {
     content: '';
     position: absolute;
 /*     bottom: -3px; */
-    left: 0;
+/*     left: 0;
     width: 100%;
     opacity: 1 !important;
     height: 1px;
-    background-color: var(--green);
+    background-color: var(--green); */
 /*     transform: scaleX(0.0); */
-    transform-origin: bottom left;
+/*     transform-origin: bottom left; */
 /*     transition: transform .5s ease-out; */
 }
 
