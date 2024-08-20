@@ -379,35 +379,35 @@ a, button{
 a::before {
     content: '';
     position: absolute;
-    bottom: -3px;
+/*     bottom: -3px; */
     left: 0;
     width: 100%;
     opacity: 1 !important;
     height: 1px;
     background-color: var(--green);
-    transform: scaleX(0.0);
+/*     transform: scaleX(0.0); */
     transform-origin: bottom left;
-    transition: transform .5s ease-out;
+/*     transition: transform .5s ease-out; */
 }
 
 a:hover::before {
-    transform: scaleX(1)
+/*     transform: scaleX(1) */
 }
 
 a span {
     display: inline-block;
     vertical-align: bottom;
     /* position: relative; */
-    top: 9px;
-    transform: translateX(14px);
+/*     top: 9px; */
+/*     transform: translateX(14px); */
     opacity: 1 !important;
-    transition: all .3s ease-out .3s;
+/*     transition: all .3s ease-out .3s; */
     width: 100%;
 }
 
 a:hover span {
-    transform: translateX(3px);
-    opacity: 1 !important;
+/*     transform: translateX(3px);
+    opacity: 1 !important; */
 }
 
 cite {
