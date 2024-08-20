@@ -334,11 +334,9 @@ h3 {
     color: #253b7b;
     font-family: var(--font-family-secondary);
     margin-bottom: calc(2 * var(--base-line-height) - var(--baseline-offset));
-  /* border:1px solid white; */
 }
 
 h3 q {
-/*     color: #ef303b; */
     font-weight: 800
 }
 
@@ -349,7 +347,6 @@ p {
     font-weight: var(--font-weight-500);
     color: #999;
     margin-bottom: calc(var(--baseline-offset) * -1);
-  /* border:1px solid blue; */
 }
 
 
@@ -367,12 +364,9 @@ p.ampersand {
 }
 
 a, button{
-    /* --cap-height: 0.826; */
-    /* --font-size: 30px; */
-    /* --baseline-multi: 2; */
     font-family: var(--font-family-secondary);
     font-weight: var(--font-weight-400);
-    /* margin-bottom: calc(3 * var(--base-line-height) - var(--baseline-offset)); */
+
     display: inline-block;
     text-decoration: none;
     color: var(--red);
@@ -384,29 +378,18 @@ a, button{
 a::before {
     content: '';
     position: absolute;
-/*     bottom: -3px; */
-/*     left: 0;
-    width: 100%;
-    opacity: 1 !important;
-    height: 1px;
-    background-color: var(--green); */
-/*     transform: scaleX(0.0); */
-/*     transform-origin: bottom left; */
-/*     transition: transform .5s ease-out; */
 }
 
 a:hover::before {
-/*     transform: scaleX(1) */
+
 }
 
 a span {
     display: inline-block;
     vertical-align: bottom;
-    /* position: relative; */
-/*     top: 9px; */
-/*     transform: translateX(14px); */
+
     opacity: 1 !important;
-/*     transition: all .3s ease-out .3s; */
+
     width: 100%;
 }
 
