@@ -683,6 +683,7 @@ body::after {
 @media screen and (max-width: 480px) {
     h1 {
         font-size: 15px;
+        line-height: calc(var(--line-height) / 2);
     }
 
     .row:nth-of-type(2) .column {
@@ -691,14 +692,15 @@ body::after {
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     h2 {
         letter-spacing: 6px;
         margin-left: -6px
     }
 
     a, h1, h2 {
-        font-size: 15px
+        font-size: 15px;
+        line-height: calc(var(--line-height) / 2);
     }
 
     a span {
