@@ -3,6 +3,19 @@
     position: absolute !important;
 }
 
+svg {
+    height: 34.5px;
+    width: 34.5px;
+    bottom: 0;
+    align-items: baseline;
+    vertical-align: text-bottom;
+}
+
+span#sample {
+    align-items: baseline;
+    justify-content: start;
+}
+
 
 
 /* ==== Wipe CSS ==== */
