@@ -667,7 +667,7 @@ body::after {
     h2,
     h3 {
         --font-size: 30px;
-        --baseline-multi: 5
+
     }
 
     /* a {
@@ -683,7 +683,6 @@ body::after {
 @media screen and (max-width: 480px) {
     h1 {
         --font-size: 30px;
-        --baseline-multi: 8
     }
 
     .row:nth-of-type(2) .column {
