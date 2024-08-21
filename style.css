@@ -681,9 +681,23 @@ body::after {
 }
 
 @media screen and (max-width: 480px) {
-    h1 {
+    h2 {
+        letter-spacing: 6px;
+        margin-left: -6px
+    }
+
+    a, h1, h2 {
         font-size: 15px;
         line-height: calc(var(--line-height) / 2);
+    }
+
+    svg {
+        height: calc(34.5px / 2);
+        width: calc(34.5px / 2);
+    }
+
+    a span {
+        top: 13px
     }
 
     .row:nth-of-type(2) .column {
@@ -701,6 +715,11 @@ body::after {
     a, h1, h2 {
         font-size: 15px;
         line-height: calc(var(--line-height) / 2);
+    }
+
+    svg {
+        height: calc(34.5px / 2);
+        width: calc(34.5px / 2);
     }
 
     a span {
