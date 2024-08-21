@@ -700,8 +700,13 @@ body::after {
         top: 13px
     }
 
-    .row:nth-of-type(2) .column {
+    .row, .row:nth-of-type(2) .column {
         max-width: 100%;
+    }
+
+    .row, .row:not(:nth-of-type(1)) {
+        padding: var(--spacing-3) calc((var(--spacing-3)* 1) / 2);
+        padding-top: var(--spacing-3) calc((var(--spacing-3)* 1) / 2);
     }
 
 }
@@ -720,6 +725,11 @@ body::after {
     svg {
         height: calc(34.5px / 2);
         width: calc(34.5px / 2);
+    }
+
+    .row, .row:not(:nth-of-type(1)) {
+        padding: var(--spacing-3) calc((var(--spacing-3)* 1) / 2);
+        padding-top: var(--spacing-3) calc((var(--spacing-3)* 1) / 2);
     }
 
     a span {
