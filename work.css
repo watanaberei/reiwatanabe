@@ -13,3 +13,10 @@ body {
 .figma iframe {
   align-item: center;
 }
+.embed_documentation_footer--documentationFooter--cRlI0, .embed_documentation_footer--documentationFooterLeft--LSi6J {
+  display: none !important;
+}
+
+.header--headerClear---veTr {
+  display: none !important;
+}

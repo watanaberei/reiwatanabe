@@ -1,3 +1,21 @@
+.row.bottom {
+    bottom: 0px !important;
+    position: absolute !important;
+}
+
+svg {
+    height: 34.5px;
+    width: 34.5px;
+    bottom: 0;
+    align-items: baseline;
+    vertical-align: text-bottom;
+}
+
+span#sample {
+    align-items: baseline;
+    justify-content: start;
+}
+
 
 
 /* ==== Wipe CSS ==== */
@@ -63,6 +81,7 @@ a {
   color: inherit; /* 1 */
   display: inline-block; /* 2 */
   background-color: transparent; /* 3 */
+  opacity: 1 !important;
 }
 
 /**
@@ -221,12 +240,16 @@ table {
 
     /* ==== Color ==== */
     --BG: #F0F1F1;
-    --light: #DEDEDC;
+    --light: #F3F3FA;
     --regular: #B7B6B5;
-    --green: #28322A;
+    --green: #1B2421;
     --grey: #B7B6B5;
     --dark: #0D0E0E;
-    --red: #c62b29;
+    /* --red: #E2A38F; */
+    --red: #AE483F;
+    /* --red: #E3C26B; */
+    /* --red: #E06652; */
+    /* --red: #b04c03; */
     --yellow: #FFFF4D;
 }
 
@@ -241,22 +264,22 @@ html {
 
 h1::selection {
   background-color: var(--white);
-color: var(--yellow);
+color: var(--red);
 }
 
 span::selection {
   background-color: var(--white);
-  color: var(--yellow);
+  color: var(--red);
 }
 
 button::selection {
   background-color: var(--white);
-color: var(--yellow);
+color: var(--red);
 }
 
 a::selection {
   background-color: var(--white);
-  color: var(--yellow);
+  color: var(--red);
 }
 
 
@@ -280,6 +303,16 @@ cite {
 h1 {
     --cap-height: 0.826;
     --font-size: 30px;
+    --baseline-multi: 3;
+    font-family: var(--font-family-secondary);
+    font-weight: var(--font-weight-400);
+    color: var(--light);
+    margin-bottom: calc(1 * var(--base-line-height) - var(--baseline-offset));
+}
+
+h6 {
+    --cap-height: 0.826;
+    --font-size: 12px;
     --baseline-multi: 3;
     font-family: var(--font-family-secondary);
     font-weight: var(--font-weight-400);
@@ -314,22 +347,19 @@ h3 {
     color: #253b7b;
     font-family: var(--font-family-secondary);
     margin-bottom: calc(2 * var(--base-line-height) - var(--baseline-offset));
-  /* border:1px solid white; */
 }
 
 h3 q {
-/*     color: #ef303b; */
     font-weight: 800
 }
 
 p {
     --cap-height: 0.752;
-    --font-size: 21px;
+    --font-size: 15px;
     --baseline-multi: 4;
     font-weight: var(--font-weight-500);
     color: #999;
     margin-bottom: calc(var(--baseline-offset) * -1);
-  /* border:1px solid blue; */
 }
 
 
@@ -347,15 +377,12 @@ p.ampersand {
 }
 
 a, button{
-    /* --cap-height: 0.826; */
-    --font-size: 30px;
-    /* --baseline-multi: 2; */
     font-family: var(--font-family-secondary);
     font-weight: var(--font-weight-400);
-    /* margin-bottom: calc(3 * var(--base-line-height) - var(--baseline-offset)); */
+
     display: inline-block;
     text-decoration: none;
-    color: var(--yellow);
+    color: var(--red);
     position: relative;
     z-index: 1;
   /* border:1px solid purple; */
@@ -364,34 +391,24 @@ a, button{
 a::before {
     content: '';
     position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: var(--green);
-    transform: scaleX(0.0);
-    transform-origin: bottom left;
-    transition: transform .5s ease-out;
 }
 
 a:hover::before {
-    transform: scaleX(1)
+
 }
 
 a span {
     display: inline-block;
     vertical-align: bottom;
-    position: relative;
-    top: 9px;
-    transform: translateX(14px);
-    opacity: 0;
-    transition: all .3s ease-out .3s;
-    width: 0.8rem
+
+    opacity: 1 !important;
+
+    width: 100%;
 }
 
 a:hover span {
-    transform: translateX(3px);
-    opacity: 1;
+/*     transform: translateX(3px);
+    opacity: 1 !important; */
 }
 
 cite {
@@ -457,6 +474,7 @@ body::after {
 
 .row:not(:nth-of-type(1)) {
     padding: var(--spacing-3) calc(var(--spacing-3) * 1);
+    padding-top: var(--spacing-3) calc(var(--spacing-3)* 1) !important;
 }
 /*
 @media screen and (max-width: 1366px) {
@@ -470,6 +488,31 @@ body::after {
         padding: var(--spacing-8) var(--spacing-2);
     }
 } */
+
+.menu {
+  position: absolute;
+  left: 30px;
+  bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  gap:15px;
+}
+
+.menu-right {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+.menu-left {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+}
+
+
+.menu-item {
+  color: red;
+}
 
 .row:nth-of-type(3) {
     flex-direction: column;
@@ -527,18 +570,18 @@ body::after {
     /* max-width: 1200px; */
     max-width: 836px;
 }
-
+/*
 .row:nth-of-type(1) .column {
     margin-right: auto;
     /* max-width: 1200px; */
-}
+} */
 
 .row:nth-of-type(2) .column {
     /* max-width: 500px; */
     /* margin-left: auto;
     margin-right: auto; */
 }
-
+/*
 .row:nth-of-type(3) .column:nth-of-type(1) {
     width: auto;
 }
@@ -553,7 +596,7 @@ body::after {
     flex-direction: column;
     align-items: flex-start;
     padding-top: var(--spacing-3)
-}
+} */
 
 @media screen and (max-width: 1366px) {
 
@@ -624,12 +667,12 @@ body::after {
     h2,
     h3 {
         --font-size: 30px;
-        --baseline-multi: 5
+
     }
 
-    a {
+    /* a {
         --font-size: 30px
-    }
+    } */
 
     a span {
         top: 11px
@@ -638,25 +681,57 @@ body::after {
 }
 
 @media screen and (max-width: 480px) {
-    h1 {
-        --font-size: 30px;
-        --baseline-multi: 8
-    }
-
-    .row:nth-of-type(2) .column {
-        max-width: 100%;
-    }
-
-}
-
-@media screen and (max-width: 400px) {
     h2 {
         letter-spacing: 6px;
         margin-left: -6px
     }
 
-    a {
-        font-size: 16px
+    a, h1, h2 {
+        font-size: 15px;
+        line-height: calc(var(--line-height) / 2);
+    }
+
+    svg {
+        height: calc(34.5px / 2);
+        width: calc(34.5px / 2);
+    }
+
+    a span {
+        top: 13px
+    }
+
+    .row, .row:nth-of-type(2) .column {
+        max-width: 100%;
+    }
+
+    .row, .row:not(:nth-of-type(1)) {
+        padding: var(--spacing-3) calc((var(--spacing-3)* 1) / 2);
+        padding-top: var(--spacing-3) calc((var(--spacing-3)* 1) / 2);
+        padding-bottom: calc((var(--spacing-3)* 1) / 2);
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        letter-spacing: 6px;
+        margin-left: -6px
+    }
+
+    a, h1, h2 {
+        font-size: 15px;
+        line-height: calc(var(--line-height) / 2);
+    }
+
+    svg {
+        height: calc(34.5px / 2);
+        width: calc(34.5px / 2);
+    }
+
+    .row, .row:not(:nth-of-type(1)) {
+        padding: var(--spacing-3) calc((var(--spacing-3)* 1) / 2);
+        padding-top: var(--spacing-3) calc((var(--spacing-3)* 1) / 2);
+        padding-bottom: calc((var(--spacing-3)* 1) / 2);
     }
 
     a span {
