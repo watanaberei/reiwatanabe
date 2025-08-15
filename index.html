@@ -3,45 +3,137 @@
 <head>
   <meta charset="UTF-8">
   <title>rw</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./work.css">
-  <link rel="stylesheet" href="./tooltip.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="_asset/favicon/apple-touch-icon.png?">
-  <link rel="icon" type="image/png" sizes="32x32" href="_asset/favicon/favicon-32x32.png?">
-  <link rel="icon" type="image/png" sizes="16x16" href="_asset/favicon/favicon-16x16.png?">
-  <link rel="manifest" href="_asset/favicon/site.webmanifest?">
-  <link rel="mask-icon" href="_asset/favicon/safari-pinned-tab.svg?" color="#5bbad5">
+  <!-- <link rel="stylesheet" href="./css/style.css"> -->
+  <script type="text/javascript" src="script.js"></script>
+  <script type="module" src="./components/components.js"></script>
+
+  <link rel="stylesheet" href="./css/screen/work.css">
+
+  <link rel="stylesheet" href="./css/utility/tooltip.css">
+
+  <link rel="stylesheet" href="./css/type/text.css">
+  <link rel="stylesheet" href="./css/type/type.css">
+  <link rel="stylesheet" href="./css/type/glyph.css">
+
+  <link rel="stylesheet" href="./css/effector/array.css">
+
+  <link rel="stylesheet" href="./css/global/tokens.css">
+  <link rel="stylesheet" href="./css/global/grid.css">
+  <link rel="stylesheet" href="./css/type/global.css">
+
+  <link rel="stylesheet" href="./css/container/container.css">
+
+  <link rel="stylesheet" href="./css/card/cardAccount.css">
+  <link rel="stylesheet" href="./css/card/cardProject.css">
+
+  <link rel="stylesheet" href="./css/array/item.css">
+
+  <link rel="stylesheet" href="./css/media/image.css">
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="asset/favicon/apple-touch-icon.png?">
+  <link rel="icon" type="image/png" sizes="32x32" href="asset/favicon/favicon-32x32.png?">
+  <link rel="icon" type="image/png" sizes="16x16" href="asset/favicon/favicon-16x16.png?">
+  <link rel="manifest" href="asset/favicon/site.webmanifest?">
+  <link rel="mask-icon" href="asset/favicon/safari-pinned-tab.svg?" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
   <script type="text/javascript">
+    // Fullscreen function for opening links
     function fullScreen(theURL) {
-    window.open(theURL, '', 'fullscreen=yes, scrollbars=yes,location=yes,resizable=yes');
+      window.open(theURL, '', 'fullscreen=yes, scrollbars=yes,location=yes,resizable=yes');
     }
   </script>
 </head>
 <body>
 
-<div class="page-wrap">
+<div class="main">
 
+  <!-- <div class="row bottom"> -->
 
-<h1>
-  <div class="row bottom">
-
-    <a href="javascript:void(0);" onclick="fullScreen('/work');" target="_blank">
-      <span id="sample02">
-        View Book
-        <svg width="34.5" height="34.5" viewBox="0 0 34.5 34.5" fill="F3F3FA" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9464 8.87806L9.69189 19.0774L9.75744 19.1429L9.73242 19.1678L11.3926 20.8279L11.4174 20.8028L11.4737 20.8591L21.6777 10.5993V20.5845H24.2023V8.06088L24.2026 8.06064L24.2023 8.06039V6.34815L22.49 6.34814L9.96533 6.34815L9.96536 8.87806H19.9464ZM18.3195 20.5843H15.795V25.2262H5.34474L5.34265 14.776H9.96599L9.96641 12.2515H2.82031V27.7506H18.3195V20.5843Z"></path>
-        </svg>
-      </span>
-    </a>
     
-  </div>
-</h1>
+      
+      
+      <div class="main grid04">
 
+        <div class="container headline col04 row01 grid04">
+          
+          <div class="text col02">
+            <span class="text02">
+              Files
+            </span>
+          </div>
+          <!-- <div class="subtext col02">
+            <span class="text02">
+              rws
+            </span>
+          </div> -->
+        
+        </div>
+
+        <!-- Container for dynamically rendered ComponentCards -->
+        <div class="container project col04 row01 grid04" id="project-cards-container">
+          <!-- ComponentCards will be injected here by JS -->
+        </div>
+
+        <!-- The rest of the static links remain unchanged -->
+        <a href="javascript:void(0);" id="Google" onclick="fullScreen('./screens/chromeos/dev-log.html');" target="_blank" class="title">
+          <span class="text02">
+            ChromeOS
+          </span>
+        </a>
+
+        <a href="javascript:void(0);" id="AT&T" onclick="fullScreen('./screens/ATT/low-mid-funnel.html');" target="_blank" class="title">
+          <span class="text02">
+            AT&T
+          </span>
+        </a>
+
+        <a href="javascript:void(0);" id="Medialink" onclick="fullScreen('/work');" target="_blank" class="title">
+          <span class="text02">
+            Medialink
+          </span>
+        </a>
+
+        <a href="javascript:void(0);" id="FSY" onclick="fullScreen('/work');" target="_blank" class="title">
+          <span class="text02">
+            Four Seasons Yatch
+          </span>
+        </a>
+
+        <a href="javascript:void(0);" id="Ourrs" onclick="fullScreen('/work');" target="_blank" class="title">
+          <span class="text02">
+            Ourrs / Ecommerce
+          </span>
+        </a>
+
+        <a href="javascript:void(0);" id="TacoBell" onclick="fullScreen('/work');" target="_blank" class="title">
+          <span class="text02">
+            TacoBell /       
+          </span>
+        </a>
+
+        <a href="javascript:void(0);" id="Neumad" onclick="fullScreen('/work');" target="_blank" class="title">
+          <span class="text02">
+            Neumad 
+          </span>
+        </a>
+
+      </div>
+  
+  <!-- </div> -->
+  
 </div>
+
+<!-- 
+  The following is commented out legacy content.
+  No changes made here.
+-->
+
+<!-- </div>
   <div class="row">
     <div class="column">
       <h1>
@@ -54,10 +146,8 @@
         For availability, email 
         <button onclick="copy('to.reiwatanabe@gmail.com')">
           <span id="sample">to.reiwatanabe@gmail.com
-            <!-- <svg width="30" height="30" viewBox="0 0 30 24" fill="F3F3FA" xmlns="http://www.w3.org/2000/svg">
-            <path d="M25 2.5H12.5C11.1212 2.5 10 3.62125 10 5V10H5C3.62125 10 2.5 11.1212 2.5 12.5V25C2.5 26.3788 3.62125 27.5 5 27.5H17.5C18.8788 27.5 20 26.3788 20 25V20H25C26.3788 20 27.5 18.8788 27.5 17.5V5C27.5 3.62125 26.3788 2.5 25 2.5ZM5 25V12.5H17.5L17.5025 25H5ZM25 17.5H20V12.5C20 11.1212 18.8788 10 17.5 10H12.5V5H25V17.5Z"/>
-            </svg> -->
-            <svg width="34.5" height="34.5" viewBox="0 0 34.5 34.5" fill="F3F3FA" xmlns="http://www.w3.org/2000/svg">
+           
+            <svg width="34.5" height="34.5" viewBox="0 0 34.5 34.5" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M24.2028 6.34814V21.8473H18.3204V27.7509H2.82129V12.2517H8.70361V6.34814H24.2028ZM15.796 19.3229H11.228L11.2259 8.87268H21.6783V19.3229H18.3204V19.3229H15.796V19.3229ZM15.796 21.8473V25.2265H5.34571L5.34362 14.7762H8.70361V21.8473H15.796Z" />
             </svg>
           </span>
@@ -65,16 +155,69 @@
         <!-- /
         <a href="https://www.linkedin.com/in/reiwatanabe/"  target="_blank">Linkedin</a>
         </span> -->
-      </h1>
 
+    <!-- </div>
+  </div> -->
 
-    </div>
-  </div>
+<!-- JS SCRIPTS -->
 
+<!-- <script type="module" src="./components/components.js"></script> -->
 
+<!-- <script type="text/javascript">
+  // =========================
+  // Render ComponentCards from @componentCard.js using data from @projects.js
+  // =========================
 
-<script type="text/javascript" src="script.js">
+  // Console log for debugging
+  console.log('[index.html][line ~160] - Attempting to render ComponentCards from cardData');
 
-</script>
+  // Wait for DOM to be ready
+  document.addEventListener('DOMContentLoaded', function() {
+    // Check if ComponentCard and cardData are loaded
+    if (typeof ComponentCard === 'undefined') {
+      console.error('[index.html][line ~165] - ComponentCard is not defined');
+      return;
+    }
+    if (typeof cardData === 'undefined') {
+      console.error('[index.html][line ~168] - cardData is not defined');
+      return;
+    }
+
+    // Get the container for the cards
+    var container = document.getElementById('project-cards-container');
+    if (!container) {
+      console.error('[index.html][line ~173] - #project-cards-container not found');
+      return;
+    }
+
+    // Render each card from cardData
+    cardData.forEach(function(card, idx) {
+      // Console log each card for debugging
+      console.log('[index.html][line ~179] - Rendering card', idx, card);
+
+      // Defensive: check required fields
+      var companyId = card.companyId || '';
+      var projectId = card.projectId || '';
+      var type = card.type || '';
+      var tags = card.attributes || [];
+      var link = card.link || '';
+
+      // Render the card using ComponentCard.render
+      var cardHTML = ComponentCard.render(companyId, projectId, type, tags, link);
+
+      // Create a wrapper div for each card
+      var cardDiv = document.createElement('div');
+      cardDiv.className = 'project-card-wrapper';
+      cardDiv.innerHTML = cardHTML;
+
+      // Append to container
+      container.appendChild(cardDiv);
+    });
+
+    // Console log after rendering
+    console.log('[index.html][line ~196] - Finished rendering all ComponentCards');
+  });
+</script> -->
+
 </body>
 </html>
